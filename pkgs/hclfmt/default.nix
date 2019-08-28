@@ -1,15 +1,15 @@
 { stdenv, buildGoPackage, fetchFromGitHub }:
 
 buildGoPackage rec {
-  name = "hclfmt-${version}";
-  version = "0.1.0";
+  name = "hclfmt-unstable-${version}";
+  version = "2019-07-20";
   goPackagePath = "github.com/fatih/hclfmt";
 
   src = fetchFromGitHub {
-    owner = "fatih";
+    owner = "endocrimes"; # Use personal fork
     repo = "hclfmt";
-    rev = "374cd0fd2a551b57d2538b8f48d63e54fb86468b";
-    sha256 = "0i0r6hdp95x1dakm37p3djd60xz1zbz71zq419w66465pd8k5vxw";
+    rev = "1fa3d0fbf4712a47a527c10e397118ed5e7cd7a7";
+    sha256 = "1sv7040ccjcmcy2203hc6ibq608dnn8jkz9a5d236wc6jz4ymhn0";
   };
 
   goDeps = ./deps.nix;

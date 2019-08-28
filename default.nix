@@ -7,5 +7,7 @@ let
 
    self = {
       hclfmt = callPackage ./pkgs/hclfmt { };
+      vault = callPackage ./pkgs/vault { };
+      gotestsum = callPackage ./pkgs/gotestsum { };
    };
    in self
