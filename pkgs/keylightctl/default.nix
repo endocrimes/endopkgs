@@ -11,7 +11,7 @@ buildGoModule rec {
     sha256 = "1xkw04fsyn1hrpmmkw23cj77s4qnw8x4mhvzi55hjnzifq71h4p1";
   };
 
-  modSha256 = "0jd2f5jk2nmqv3fhh20bkhj49icbkpnm8ysxqqnzwv2ah82hmn49";
+  vendorSha256 = null;
 
   meta = with stdenv.lib; {
     homepage = "https://github.com/endocrimes/keylightctl";
