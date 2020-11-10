@@ -8,5 +8,6 @@ let
    self = {
       keylightctl = callPackage ./pkgs/keylightctl { };
       liquidctl = callPackage ./pkgs/liquidctl { };
+      deckmaster = callPackage ./pkgs/deckmaster { };
    };
    in self
