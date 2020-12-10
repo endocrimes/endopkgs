@@ -9,5 +9,6 @@ let
       keylightctl = callPackage ./pkgs/keylightctl { };
       liquidctl = callPackage ./pkgs/liquidctl { };
       deckmaster = callPackage ./pkgs/deckmaster { };
+      rmapi = callPackage ./pkgs/rmapi { };
    };
    in self
