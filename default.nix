@@ -10,5 +10,6 @@ let
       liquidctl = callPackage ./pkgs/liquidctl { };
       deckmaster = callPackage ./pkgs/deckmaster { };
       rmapi = callPackage ./pkgs/rmapi { };
+      flux2 = callPackage ./pkgs/flux2 { };
    };
    in self
