@@ -6,11 +6,11 @@ let
 in
 buildPythonApplication rec {
   pname = "liquidctl";
-  version = "1.4.1";
+  version = "1.4.2";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "13gzfanxdrn45cwz9mm1j7jxxpwmdvz02i122ibimrzkndjvr8sr";
+    sha256 = "0g0sdzknii70d2rc1pasb0d6qfzhyhcxp3z788gdkjz1r9dmznir";
   };
 
   propagatedBuildInputs =
