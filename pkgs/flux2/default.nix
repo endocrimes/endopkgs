@@ -2,12 +2,12 @@
 
 buildGoModule rec {
   pname = "flux2";
-  version = "v0.5.7";
+  version = "0.5.7";
 
   src = fetchFromGitHub {
     owner = "fluxcd";
     repo = pname;
-    rev = version;
+    rev = "v${version}";
     sha256 = "1xs09wamvkl8i90s73ndsni2d89s3x4xxxdmvyjxqgaqnn5bdqva";
   };
 
