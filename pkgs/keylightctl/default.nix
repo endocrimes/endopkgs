@@ -2,13 +2,13 @@
 
 buildGoModule rec {
   name = "keylightctl-${version}";
-  version = "0.0.1";
+  version = "0.0.3";
 
   src = fetchFromGitHub {
     owner = "endocrimes";
     repo = "keylightctl";
     rev = "${version}";
-    sha256 = "1xkw04fsyn1hrpmmkw23cj77s4qnw8x4mhvzi55hjnzifq71h4p1";
+    sha256 = "0299sgxlsvqyxplflplbd11m0c8xwgcsnnsyqmp7nzc5a5f0y03p";
   };
 
   vendorSha256 = null;
